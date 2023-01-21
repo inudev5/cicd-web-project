@@ -16,6 +16,7 @@ public class WelcomeController {
     @GetMapping("/")
     public String index(Model model) {
         logger.debug("Welcome to njonecompany.com...");
+        logger.debug("this is Inu");
 
         model.addAttribute("msg", getMessage());
         model.addAttribute("today", new Date());
